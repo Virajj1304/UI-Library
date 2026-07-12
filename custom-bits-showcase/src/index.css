@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #131314;
+    color: #e3e3e3;
+  }
+
+  /* Material 3 Muted Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #131314;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2f3032;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3c3d3f;
+  }
+}
+
+/* Material Design 3 Canvas overlays */
+.grid-bg {
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(227, 227, 227, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(227, 227, 227, 0.03) 1px, transparent 1px);
+}
+
+.radial-mask {
+  background: radial-gradient(circle 600px at center, transparent 20%, #131314 100%);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS Gooey Filter Container */
+.gooey-filter {
+  filter: url(#goo-filter);
+}
